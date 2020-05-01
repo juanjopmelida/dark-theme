@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+/* line 1, ../sass/_dark-theme.scss */
+body {
+  font-family: "Roboto Slab", serif;
+  font-size: 17px;
+  font-weight: 300;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  color: #ccb6b6;
+}
+
+/* line 7, ../sass/_dark-theme.scss */
+.container {
+  padding: 10% 5%;
+}
+
+/* line 11, ../sass/_dark-theme.scss */
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}

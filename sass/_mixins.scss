@@ -1,0 +1,23 @@
+@mixin text-body{ 
+    font-family: $roboto-slab;
+	font-size: 17px;
+	font-weight: $regular-weight; 
+}
+
+@mixin light-theme {
+	color: $granite; 
+}
+
+@mixin dark-theme {
+    color: $almost-white;
+}
+
+@mixin  display-body {
+	width: 100vw;
+	height: 100vh;
+	margin: auto;	
+}
+
+@mixin display-container {
+    padding: 10% 5%;
+}

@@ -1,23 +1,57 @@
-@mixin text-body{ 
-    font-family: $roboto-slab;
-	font-size: 17px;
-	font-weight: $regular-weight; 
+@mixin logo {
+    width: 15rem;
+    height: 15rem;
 }
 
 @mixin light-theme {
 	color: $granite; 
+    font-family: $times-new-roman;
+    font-size: 1.3rem;
+    background-color: $almost-white;
+    .logo {
+        border-radius: 10%;
+    }
+    .shadow {
+        border-radius: 10%;
+        box-shadow: 10px 10px 18px -8px darkslategrey;
+    } 
 }
 
 @mixin dark-theme {
     color: $almost-white;
+    font-family: $open-sans;
+    font-size: 1.2rem;
+    background-color: $granite;
+    .logo {
+        border-radius: 0;
+    }
+    .shadow {
+        box-shadow: -10px -10px 18px -8px grey;
+    }
 }
 
-@mixin  display-body {
+@mixin  display-container {
 	width: 100vw;
 	height: 100vh;
-	margin: auto;	
+    margin: auto;
+    display: inline-flex;
+    flex-flow: column;	
 }
 
-@mixin display-container {
+@mixin display-main {
+    padding: 2% 5%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+        padding: 0 3rem;
+    }
+}
+
+@mixin display-menu {
     padding: 10% 5%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
 }

@@ -1,22 +1,73 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
-/* line 1, ../sass/_dark-theme.scss */
-body {
-  font-family: "Roboto Slab", serif;
-  font-size: 17px;
-  font-weight: 300;
+/* line 1, ../sass/_base.scss */
+:root {
+  box-sizing: border-box;
+}
+
+/* line 5, ../sass/_base.scss */
+.light-theme {
+  color: #2e2b2b;
+  font-family: "Times New Roman", serif;
+  font-size: 1.3rem;
+  background-color: #eeeeee;
+}
+/* line 11, ../sass/_mixins.scss */
+.light-theme .logo {
+  border-radius: 10%;
+}
+/* line 14, ../sass/_mixins.scss */
+.light-theme .shadow {
+  border-radius: 10%;
+  box-shadow: 10px 10px 18px -8px darkslategrey;
+}
+
+/* line 9, ../sass/_base.scss */
+.dark-theme {
+  color: #eeeeee;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  background-color: #2e2b2b;
+}
+/* line 25, ../sass/_mixins.scss */
+.dark-theme .logo {
+  border-radius: 0;
+}
+/* line 28, ../sass/_mixins.scss */
+.dark-theme .shadow {
+  box-shadow: -10px -10px 18px -8px grey;
+}
+
+/* line 13, ../sass/_base.scss */
+.logo {
+  width: 15rem;
+  height: 15rem;
+}
+
+/* line 17, ../sass/_base.scss */
+.container {
   width: 100vw;
   height: 100vh;
   margin: auto;
-  color: #ccb6b6;
+  display: inline-flex;
+  flex-flow: column;
 }
 
-/* line 7, ../sass/_dark-theme.scss */
-.container {
-  padding: 10% 5%;
+/* line 21, ../sass/_base.scss */
+.main {
+  padding: 2% 5%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 47, ../sass/_mixins.scss */
+.main p {
+  padding: 0 3rem;
 }
 
-/* line 11, ../sass/_dark-theme.scss */
+/* line 25, ../sass/_base.scss */
 .menu {
+  padding: 10% 5%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;

@@ -1,0 +1,27 @@
+:root {
+    box-sizing: border-box;
+}
+
+.light-theme {
+    @include light-theme;
+}
+
+.dark-theme {
+    @include dark-theme;
+}
+
+.logo {
+    @include logo;
+}
+
+.container {
+    @include display-container;
+}
+
+.main {
+    @include display-main;
+}
+
+.menu {
+    @include display-menu;
+}

@@ -13,6 +13,9 @@
             localStorage.setItem('theme', themeName);
             var body = document.body;
             body.className=themeName;
+            debugger;
+            var text = document.getElementsByClassName("button").firstChild;
+            text.textContent = text.textContent == "Lock" ? "Unlock" : "Lock";
         }
 
         // function to toggle between light and dark theme
@@ -45,7 +48,7 @@
             <div class="shadow"><img src="src/img/logo.png" class="logo" /></div>
         </div>
         <div class="footer">
-            <button id="switch" onclick="toggleTheme()">Switch</button>
+            <button class="button" onclick="toggleTheme()">Switch</button>
         </div>
     </div>
 </body>

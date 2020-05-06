@@ -25,3 +25,11 @@
 .menu {
     @include display-menu;
 }
+
+.footer {
+    margin: auto;
+}
+
+.button {
+    @include button;
+}

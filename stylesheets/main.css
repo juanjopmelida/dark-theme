@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:400italic,700italic,400,700);
 /* line 1, ../sass/_base.scss */
 :root {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 /* line 5, ../sass/_base.scss */
 .light-theme {
   color: #2e2b2b;
-  font-family: "Times New Roman", serif;
+  font-family: "Fjalla One", serif;
   font-size: 1.3rem;
   background-color: #eeeeee;
 }
@@ -20,6 +20,11 @@
   border-radius: 10%;
   box-shadow: 10px 10px 18px -8px darkslategrey;
 }
+/* line 18, ../sass/_mixins.scss */
+.light-theme .button {
+  color: #C9A09A;
+  background: #474168;
+}
 
 /* line 9, ../sass/_base.scss */
 .dark-theme {
@@ -28,13 +33,18 @@
   font-size: 1.2rem;
   background-color: #2e2b2b;
 }
-/* line 25, ../sass/_mixins.scss */
+/* line 29, ../sass/_mixins.scss */
 .dark-theme .logo {
   border-radius: 0;
 }
-/* line 28, ../sass/_mixins.scss */
+/* line 32, ../sass/_mixins.scss */
 .dark-theme .shadow {
   box-shadow: -10px -10px 18px -8px grey;
+}
+/* line 35, ../sass/_mixins.scss */
+.dark-theme .button {
+  color: #474168;
+  background: #C9A09A;
 }
 
 /* line 13, ../sass/_base.scss */
@@ -60,7 +70,7 @@
   justify-content: space-between;
   align-items: center;
 }
-/* line 47, ../sass/_mixins.scss */
+/* line 55, ../sass/_mixins.scss */
 .main p {
   padding: 0 3rem;
 }
@@ -71,4 +81,16 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+}
+
+/* line 29, ../sass/_base.scss */
+.footer {
+  margin: auto;
+}
+
+/* line 33, ../sass/_base.scss */
+.button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
 }

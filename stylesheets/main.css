@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster:400italic,700italic,400,700);
 /* line 1, ../sass/_base.scss */
 :root {
   box-sizing: border-box;
@@ -7,9 +8,9 @@
 /* line 5, ../sass/_base.scss */
 .light-theme {
   color: #2e2b2b;
-  font-family: "Fjalla One", serif;
-  font-size: 1.3rem;
   background-color: #eeeeee;
+  font-family: "Lobster";
+  font-size: 1.3rem;
 }
 /* line 11, ../sass/_mixins.scss */
 .light-theme .logo {
@@ -22,16 +23,16 @@
 }
 /* line 18, ../sass/_mixins.scss */
 .light-theme .button {
-  color: #C9A09A;
+  color: #F9C4AC;
   background: #474168;
 }
 
 /* line 9, ../sass/_base.scss */
 .dark-theme {
   color: #eeeeee;
-  font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
   background-color: #2e2b2b;
+  font-family: "Open Sans";
+  font-size: 1.3rem;
 }
 /* line 29, ../sass/_mixins.scss */
 .dark-theme .logo {
@@ -44,7 +45,7 @@
 /* line 35, ../sass/_mixins.scss */
 .dark-theme .button {
   color: #474168;
-  background: #C9A09A;
+  background: #F9C4AC;
 }
 
 /* line 13, ../sass/_base.scss */

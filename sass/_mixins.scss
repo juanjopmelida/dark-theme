@@ -4,37 +4,37 @@
 }
 
 @mixin light-theme {
-	color: $granite; 
-    font-family: $times-new-roman;
+	color: $bg-dark; 
+    background-color: $bg-light;
+    font-family: $font-light;
     font-size: 1.3rem;
-    background-color: $almost-white;
     .logo {
         border-radius: 10%;
     }
     .shadow {
         border-radius: 10%;
-        box-shadow: 10px 10px 18px -8px darkslategrey;
+        box-shadow: $shadow-light;
     } 
     .button {
-        color: #C9A09A;
-        background: #474168;
+        color: $button-light;
+        background: $button-dark;
     }
 }
 
 @mixin dark-theme {
-    color: $almost-white;
-    font-family: $open-sans;
-    font-size: 1.2rem;
-    background-color: $granite;
+    color: $bg-light;
+    background-color: $bg-dark;
+    font-family: $font-dark;
+    font-size: 1.3rem;
     .logo {
         border-radius: 0;
     }
     .shadow {
-        box-shadow: -10px -10px 18px -8px grey;
+        box-shadow: $shadow-dark;
     }
     .button {
-        color: #474168;
-        background: #C9A09A;
+        color: $button-dark;
+        background: $button-light;
     }
 }
 

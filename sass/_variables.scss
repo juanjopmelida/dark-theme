@@ -1,12 +1,19 @@
-@import url(http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lobster:400italic,700italic,400,700);
 
-$times-new-roman: 'Fjalla One', serif;   
-$open-sans: 'Open Sans', sans-serif;
+
+$font-light: 'Lobster';   
+$font-dark: 'Open Sans';
 
 $pure-white: #FFF;
-$almost-white: rgb(238, 238, 238);
-$granite: rgb(46, 43, 43);
+$bg-light: rgb(238, 238, 238);
+$bg-dark: rgb(46, 43, 43);
 
+$button-light: #F9C4AC;
+$button-dark: #474168;
+
+$shadow-light: 10px 10px 18px -8px darkslategrey;
+$shadow-dark: -10px -10px 18px -8px grey;
 
 $soft-weight: 100;
 $regular-weight: 400;
